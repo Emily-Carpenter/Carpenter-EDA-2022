@@ -95,10 +95,10 @@ density_data <-
 
 
 ggplot(data = density_data) +
-   geom_bar(mapping = aes(x = ))
+  geom_histogram(mapping = aes(x = population_density), binwidth = 50)
 
 ggplot(data = density_data) +
-  geom_histogram(mapping = aes(x = population_density), binwidth = 50)
+  geom_histogram(mapping = aes(x = wolf_density), binwidth = 50)
 
 
 
