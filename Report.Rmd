@@ -4,6 +4,37 @@ output: github_document
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE,warning=FALSE,message=FALSE)
+
+library(tidyverse)
+library(readxl)
+library(urbnmapr)
+library(sf)
+library(units)
+
+pop_data <-
+  read_excel("data/mn_county_estimates_sdc_2019_tcm36-442553.xlsx") %>% 
+  transmute(
+    county = `County Name`,
+    population = `Total Population, 2019`
+  ) %>% 
+  print()
+
+pop_cattle <-
+  read_excel("data/cattle data 2020.xlsx") %>% 
+  print()
+
+pop_wolves <-
+  read_excel("data/Wolf pop per county all MN Counties.xlsx") %>% 
+  print()
+
+all_data <-
+  pop_data %>% 
+  left_join(pop_cattle) %>% 
+  left_join(pop_wolves) %>% 
+  print()
+
+counties_sf <- get_urbn_map(map = "counties", sf = TRUE)
+
 ```
 
 # Predicting Human- Animal Conflict in Minnesota
@@ -37,37 +68,6 @@ Looking at Figure 1, which shows the wolf population vs the human population in 
 -   Main result number one (fig. 2)
 
 ```{r}
-library(tidyverse)
-library(readxl)
-install.packages("devtools")
-devtools::install_github("UrbanInstitute/urbnmapr")
-library(urbnmapr)
-library(sf)
-library(units)
-
-pop_data <-
-  read_excel("data/mn_county_estimates_sdc_2019_tcm36-442553.xlsx") %>% 
-  transmute(
-    county = `County Name`,
-    population = `Total Population, 2019`
-  ) %>% 
-  print()
-
-pop_cattle <-
-  read_excel("data/cattle data 2020.xlsx") %>% 
-  print()
-
-pop_wolves <-
-  read_excel("data/Wolf pop per county all MN Counties.xlsx") %>% 
-  print()
-
-all_data <-
-  pop_data %>% 
-  left_join(pop_cattle) %>% 
-  left_join(pop_wolves) %>% 
-  print()
-
-counties_sf <- get_urbn_map(map = "counties", sf = TRUE)
 
 
 counties_sf %>% 
@@ -93,37 +93,7 @@ counties_sf %>%
 ```
 
 ```{r}
-library(tidyverse)
-library(readxl)
-install.packages("devtools")
-devtools::install_github("UrbanInstitute/urbnmapr")
-library(urbnmapr)
-library(sf)
-library(units)
 
-pop_data <-
-  read_excel("data/mn_county_estimates_sdc_2019_tcm36-442553.xlsx") %>% 
-  transmute(
-    county = `County Name`,
-    population = `Total Population, 2019`
-  ) %>% 
-  print()
-
-pop_cattle <-
-  read_excel("data/cattle data 2020.xlsx") %>% 
-  print()
-
-pop_wolves <-
-  read_excel("data/Wolf pop per county all MN Counties.xlsx") %>% 
-  print()
-
-all_data <-
-  pop_data %>% 
-  left_join(pop_cattle) %>% 
-  left_join(pop_wolves) %>% 
-  print()
-
-counties_sf <- get_urbn_map(map = "counties", sf =TRUE) 
 
 counties_sf %>%
   filter(state_name == "Minnesota") %>%
