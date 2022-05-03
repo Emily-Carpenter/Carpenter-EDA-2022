@@ -43,7 +43,7 @@ Kameron Knoll, Emily Carpenter, and Taylor Gardin ^1^
 
 ^1^ Biosciences Department, Minnesota State University Moorhead
 
-### Abstract
+### **Abstract**
 
 In Minnesota, the wolf population has been on the rise for the last few decades. More recently, the Minnesota Department of Natural Resources' Division of Fish and Wildlife (DNR) has raised questions regarding the overall wolf population, management and behaviors. Additionally, further questions came to surface when cattle and human populations were included. The purpose was to analyze wolf behaviors when they are presented with potential conflicts. For this research, data was collected from the DNR, Minnesota State Demographic Center and the Minnesota Department of Agriculture. By analyzing the data, we were able to reach predictions of potential predation by wolves. After comparing the densities of the populations by districts and counties, conclusions were able  to be reached. In the state maps provided, the counties with the lighter blue are areas where there is a higher risk of predation and conflict between the stated groups. 
 
