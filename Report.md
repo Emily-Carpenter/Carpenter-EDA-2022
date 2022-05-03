@@ -22,10 +22,6 @@ were able  to be reached. In the state maps provided, the counties with
 the lighter blue are areas where there is a higher risk of predation and
 conflict between the stated groups. 
 
--   3-5 bullet points
-
--   10-15 words per bullet
-
 ### **Introduction**
 
 In the 1960’s, the wolf population in Minnesota was only around 400
@@ -171,21 +167,3 @@ level.
 7.  Wolves And Human Well-being: Ecological & Public Health Concerns \|
     Dr. Michael W. Fox. drfoxonehealthcom. \[accessed 2022
 
-### GitHub Documents
-
-This is an R Markdown format used for publishing markdown documents to
-GitHub. When you click the **Knit** button all R code chunks are run and
-a markdown file (.md) suitable for publishing to GitHub is generated.
-
-## Including Code
-
-You can include R code in the document as follows:
-
-## Including Plots
-
-You can also embed plots, for example:
-
-![](Report_files/figure-gfm/pressure-1.png)<!-- -->
-
-Note that the `echo = FALSE` parameter was added to the code chunk to
-prevent printing of the R code that generated the plot.
