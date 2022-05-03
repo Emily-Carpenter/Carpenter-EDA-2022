@@ -81,9 +81,9 @@ in the northeastern part of the state in Cook and Lake counties. With
 the rest of the state having virtually no chance for conflict. They gray
 areas show where we had no data for cattle or wolves.
 
--   Main result number Main result number one (fig. 1)one (fig. 1)
+-   Wolf population density to human population density (fig. 1)
 
--   Main result number one (fig. 2)
+-   WOlf population density to cattle population density (fig. 2)
 
 ![](Report_files/figure-gfm/unnamed-chunk-1-1.png)<!-- -->
 
